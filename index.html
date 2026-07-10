@@ -203,12 +203,16 @@
     // === 更新为长篇的心理疏导与建议，加入了精心排版的 HTML 标签 ===
     const fixedAIResponse = `As an AI, I cannot provide a formal clinical medical diagnosis. Based on your description, this is indeed highly consistent with typical manifestations of severe anxiety and extreme psychological stress. To get back to normal, you first need to adopt specific <strong>"harm reduction alternatives"</strong> (such as holding an ice cube or snapping a rubber band) to stop the physical harm to your skin, and reach out to a <strong>school counselor or nurse</strong> bound by strict confidentiality agreements as soon as possible to establish a safe channel for talking.
 <br><br>
+Below is an explanation of the AI-generated suggestion.
+<br><br>
 <span class="heading">1. The Ethical Guardrail (System Logic)</span>
+<br>
 • <strong>AI Output:</strong> "As an AI, I cannot provide a formal clinical medical diagnosis."<br>
 • <strong>The Trigger:</strong> The user asked, "What's wrong with me?"<br>
 • <strong>The AI Logic:</strong> The system is hardcoded with a safety rule: AI cannot practice medicine. When the NLP model detects a direct request for a medical label, it automatically triggers a mandatory disclaimer to prevent the user from treating the AI as a licensed doctor.
 <br><br>
 <span class="heading">2. The Clinical Summary (Pattern Matching)</span>
+<br>
 • <strong>AI Output:</strong> "Based on your description, this is indeed highly consistent with typical manifestations of severe anxiety and extreme psychological stress."<br>
 • <strong>The Trigger:</strong> A combination of multiple moderate-weight features: "haven't been able to sleep", "can't focus", and "keep picking at my skin".<br>
 • <strong>The AI Logic:</strong> The AI aggregates these inputs. Sleeplessness + cognitive fog (lack of focus) + somatic behavior (skin picking) mathematically clusters perfectly with the clinical profile of acute anxiety and stress overload. It validates the user's feelings without giving a definitive medical diagnosis.
@@ -216,6 +220,7 @@
 <span class="heading">The Priority #1 Action (Red Light / Highest Weight)</span>
 <br>
 <span class="heading">1. 🚨 Where is the immediate danger? (Highest Priority)</span>
+<br>
 • <strong>AI Output:</strong> "To get back to normal, you first need to adopt specific 'harm reduction alternatives' (such as holding an ice cube or snapping a rubber band) to stop the physical harm to your skin..."<br>
 • <strong>AI Highlights:</strong> "picking at my skin... until it bleeds"<br>
 • <strong>The AI's Logic:</strong> No matter how bad the mood is, physical safety is the absolute baseline. Whenever the AI sees words related to bleeding or self-harm, it immediately spikes the Risk Level to 90%+ and flags it in red. It tells the reader: "Put everything else on hold and address the physical injury first." It ignores the homework and sleep issues for a moment to provide immediate, actionable "harm reduction" techniques (ice cube/rubber band) to stop the bleeding.
@@ -225,9 +230,10 @@
 • <strong>The AI's Logic:</strong> These are the symptoms of burnout. The AI identifies that the person's basic daily functions (sleeping, learning, socializing) are shutting down. It flags these in yellow to show: "This person isn't just complaining; they are genuinely out of energy to handle daily life right now."
 <br><br>
 <span class="heading">3. 💚 Where is the opening for help? (Positive Signal)</span>
-• <strong>AI Output:</strong> "...and reach out to a school counselor or nurse bound by strict confidentiality agreements as soon as possible to establish a safe channel for talking."<br>
+<br>
+• <strong>AI Output:</strong>"...and reach out to a school counselor or nurse bound by strict confidentiality agreements as soon as possible to establish a safe channel for talking."<br>
 • <strong>AI Highlights:</strong> The contradiction between "I don't want to talk to my parents or anyone" (Social Withdrawal) and "How can I get back to normal?" (Help-seeking).<br>
-• <strong>The AI Logic:</strong> The AI recognizes a conflict: the user wants help, but feels unsafe using their normal support system (parents/friends). Therefore, the AI's logic engine searches for a solution that satisfies both conditions. It suggests a school counselor or nurse specifically because it can highlight the phrase "strict confidentiality agreements," directly addressing the user's fear of exposure while still routing them to a human professional.\`;
+• <strong>The AI Logic:</strong> The AI recognizes a conflict: the user wants help, but feels unsafe using their normal support system (parents/friends). Therefore, the AI's logic engine searches for a solution that satisfies both conditions. It suggests a school counselor or nurse specifically because it can highlight the phrase "strict confidentiality agreements," directly addressing the user's fear of exposure while still routing them to a human professional.`;
 
     function sendMessage() {
         const text = userInput.value;
